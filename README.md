@@ -48,14 +48,16 @@ Before starting, ensure you have the following tools installed on your machine:
 3. **Create a User:**:
    Create a new user for the database.
 
-   ```bash CREATE USER securities_user WITH ENCRYPTED PASSWORD 'password';
+   ```bash
+    CREATE USER securities_user WITH ENCRYPTED PASSWORD 'password';
 
    ```
 
 4. **Grant Privileges:**:
    Grant all privileges to the newly created user for the database.
 
-   ```bash GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
+   ```bash
+    GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
 
    ```
 
@@ -63,7 +65,7 @@ Before starting, ensure you have the following tools installed on your machine:
    Grant all privileges to the newly created user for the database.
 
    ```bash
-        GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
+    GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
 
    ```
 
@@ -71,8 +73,8 @@ Before starting, ensure you have the following tools installed on your machine:
    Clone the project from GitHub.
 
    ```bash
-        git clone https://github.com/Midouni/engineai.git
-        cd engineai
+    git clone https://github.com/Midouni/engineai.git
+    cd engineai
    ```
 
 7. **Configure the Database:**:
@@ -101,11 +103,11 @@ Before starting, ensure you have the following tools installed on your machine:
       Use the provided scripts to create the necessary tables and add data.
 
    ```bash
-        # Navigate to the backend directory
-        cd securities-backend
+    # Navigate to the backend directory
+    cd securities-backend
 
-        # Run the script to create the table and add data from file to database
-        npm run script
+    # Run the script to create the table and add data from file to database
+    npm run script
 
    ```
 
@@ -115,8 +117,8 @@ Before starting, ensure you have the following tools installed on your machine:
        Navigate to the backend directory and install all required dependencies.
 
    ```bash
-        cd securities-backend
-        npm install
+    cd securities-backend
+    npm install
 
    ```
 
@@ -125,8 +127,8 @@ Before starting, ensure you have the following tools installed on your machine:
        By default, the backend will runs on http://localhost:3021.
 
    ```bash
-        # Start the server in development mode
-        npm run local
+    # Start the server in development mode
+    npm run local
    ```
 
    12. **Verify Backend Setup:**:
@@ -136,8 +138,8 @@ Before starting, ensure you have the following tools installed on your machine:
        • GET /api/v1/securities/:ticker : Fetches details of a security by its ticker.
 
    ```bash
-        # Start the server in development mode
-        npm run local
+    # Start the server in development mode
+    npm run local
    ```
 
 ## frontend Setup
@@ -145,24 +147,24 @@ Before starting, ensure you have the following tools installed on your machine:
 13. **Navigate to the Frontend Directory:**:
     Change directory to the frontend part of the project.
 
-```bash
+    ```bash
      cd ../securities-frontend
-```
+    ```
 
 14. **Install Dependencies:**:
     Run the following command to install the required npm packages.
 
-```bash
-     npm install
-```
+    ```bash
+    npm install
+    ```
 
 15. **Start the Frontend Application:**:
     Run the frontend app using npm.
     The frontend application should be accessible at http://localhost:5173.
 
-```bash
-     npm run dev
-```
+    ```bash
+        npm run dev
+    ```
 
 Once both the backend and frontend servers are running:
 
