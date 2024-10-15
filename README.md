@@ -177,9 +177,9 @@ Once both the backend and frontend servers are running:
 
 1.  Backend is hosted on an AWS EC2 instance with Ubuntu OS, using NGINX and PM2.
 
-    - Backend URL: http://52.47.190.210/
-    - Securities List: http://52.47.190.210/api/v1/securities
-    - Securities Details: http://52.47.190.210/api/v1/securities/000858.SZ
+    - Backend URL: http://13.38.42.252/
+    - Securities List: http://13.38.42.252/api/v1/securities
+    - Securities Details: http://13.38.42.252/api/v1/securities/000858.SZ
 
 2.  Database is hosted internally on AWS EC2 for cost savings by installing PostgreSQL, creating a database, creating a user, and running it locally on the EC2 instance.
 

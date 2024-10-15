@@ -6,7 +6,7 @@ const environment = {
 
 const urls = {
   local: "http://localhost:3021",
-  production: "http://52.47.190.210",
+  production: "http://13.38.42.252/",
   development: "",
 };
 
