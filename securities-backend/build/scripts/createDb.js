@@ -15,9 +15,10 @@ const createTable = async () => {
         port: dbConfig.port,
     });
     await client.connect();
-    // SQL statement to create the table
-    const createTableQuery = `
-    CREATE TABLE IF NOT EXISTS securities (
+    const dropAndCreateTableQuery = `
+    DROP TABLE IF EXISTS securities;
+
+    CREATE TABLE securities (
       id SERIAL PRIMARY KEY,
       ticker VARCHAR(10) UNIQUE NOT NULL,
       security_name VARCHAR(255) NOT NULL,
@@ -28,8 +29,8 @@ const createTable = async () => {
     );
   `;
     try {
-        await client.query(createTableQuery);
-        console.log("Table 'securities' created successfully!");
+        await client.query(dropAndCreateTableQuery);
+        console.log("Table 'securities' dropped and recreated successfully!");
     }
     catch (err) {
         console.error("Error creating table:", err);
@@ -38,4 +39,4 @@ const createTable = async () => {
         await client.end();
     }
 };
-createTable();
+exports.default = createTable;
