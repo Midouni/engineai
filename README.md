@@ -56,6 +56,8 @@ Before starting, ensure you have the following tools installed on your machine:
 4. **Grant Privileges:**:
    Grant all privileges to the newly created user for the database.
 
+   ```bash
+   GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
    # If you encounter privilege errors, run these additional commands:
 
    GRANT ALL PRIVILEGES ON SCHEMA public TO securities_user;
@@ -71,9 +73,6 @@ Before starting, ensure you have the following tools installed on your machine:
    ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON SEQUENCES TO securities_user;
 
    ALTER ROLE securities_user WITH SUPERUSER;
-
-   ```bash
-    GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
 
    ```
 
