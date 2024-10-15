@@ -76,15 +76,7 @@ Before starting, ensure you have the following tools installed on your machine:
 
    ```
 
-5. **Grant Privileges:**:
-   Grant all privileges to the newly created user for the database.
-
-   ```bash
-    GRANT ALL PRIVILEGES ON DATABASE securities_db TO securities_user;
-
-   ```
-
-6. **Clone the Repository:**:
+5. **Clone the Repository:**:
    Clone the project from GitHub.
 
    ```bash
@@ -92,7 +84,7 @@ Before starting, ensure you have the following tools installed on your machine:
     cd engineai
    ```
 
-7. **Configure the Database:**:
+6. **Configure the Database:**:
    Update the backend configuration (src/config/default.json) for your database settings:
    check it with your configuration your database port
 
@@ -114,7 +106,7 @@ Before starting, ensure you have the following tools installed on your machine:
    }
    ```
 
-   8. **Run the Database Scripts:**:
+   7. **Run the Database Scripts:**:
       Use the provided scripts to create the necessary tables and add data.
 
    ```bash
