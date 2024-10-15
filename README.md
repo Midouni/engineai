@@ -140,14 +140,9 @@ Before starting, ensure you have the following tools installed on your machine:
 
    3. **Verify Backend Setup:**:
       The backend exposes the following routes:
-      • GET / : to check server status
-      • GET /api/v1/securities : Fetches a list of securities.
-      • GET /api/v1/securities/:ticker : Fetches details of a security by its ticker.
-
-   ```bash
-    # Start the server in development mode
-    npm run local
-   ```
+      - GET / : to check server status
+      - GET /api/v1/securities : Fetches a list of securities.
+      - GET /api/v1/securities/:ticker : Fetches details of a security by its ticker.
 
 ## frontend Setup
 
