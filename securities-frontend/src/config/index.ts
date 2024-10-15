@@ -1,12 +1,12 @@
 const environment = {
-  isLocal: true,
+  isLocal: false,
   isDevelopment: false,
-  isProduction: false,
+  isProduction: true,
 };
 
 const urls = {
   local: "http://localhost:3021",
-  production: "http://13.38.42.252/",
+  production: "http://13.38.42.252",
   development: "",
 };
 
